@@ -9,14 +9,13 @@
     <meta content="Free HTML Templates" name="description">
 
  
-    @include('components.link')
 </head>
 
 <body>
     @include('components.topbar')
     @include('components.navbar')
     @include('components.featured')
- 
+    @include('components.category')
     @include('components.offer')
     @include('components.product')
     @include('components.footer')

@@ -16,7 +16,7 @@
     @include('components.topbar')
     @include('components.navbar')
     @include('components.featured')
- 
+    @include('components.category')
     @include('components.offer')
     @include('components.product')
     @include('components.footer')
