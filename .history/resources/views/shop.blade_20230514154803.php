@@ -14,6 +14,11 @@
 <body>
     @include('components.topbar')
     @include('components.navbar')
+
+
+ 
+
+
     <!-- Shop Start -->
     <div class="container-fluid pt-5">
         <div class="row px-xl-5">
