@@ -31,3 +31,28 @@ Route::get('/shop', function () {
 Route::get('/detail', function () {
     return view('detail');
 });
+
+//admin
+Route::get('/trangchu-admin', function () {
+    return view('trangchu_admin');
+})->name('trangchu');
+
+Route::get('/quanli-sanpham', function () {
+    return view('quanli_sanpham');
+})->name('quanli_sanpham');
+
+Route::get('/quanli-user', function () {
+    return view('quanli_user');
+})->name('quanli_user');
+
+Route::get('/quanli-blog', function () {
+    return view('quanli_blog');
+})->name('quanli_blog');
+
+Route::get('/quanli-danhgia', function () {
+    return view('quanli_danhgia');
+})->name('quanli_danhgia');
+
+Route::get('/quanli-donhang', function () {
+    return view('quanli_donhang');
+})->name('quanli_donhang');
