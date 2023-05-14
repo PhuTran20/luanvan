@@ -38,7 +38,13 @@
                         <a href="{{URL::to('') }}" class="nav-item nav-link active">Home</a>
                         <a href="{{URL::to('/shop') }}" class="nav-item nav-link">Shop</a>
                         <a href="{{URL::to('/detail') }}" class="nav-item nav-link">Shop Detail</a>
-                     
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="{{URL::to('/cart') }}" class="dropdown-item">Shopping Cart</a>
+                                <a href="{{URL::to('/checkout') }}" class="dropdown-item">Checkout</a>
+                            </div>
+                        </div>
                         <a href="{{URL::to('/cart') }}" class="nav-item nav-link">Shopping Cart</a>
                         <a href="{{URL::to('/checkout') }}" class="nav-item nav-link">Checkout</a>
                         <a href="{{URL::to('/contact') }}" class="nav-item nav-link">Contact</a>
