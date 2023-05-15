@@ -84,6 +84,6 @@ Route::get('/quanli_loaigiay', [LoaiGiayController::class, 'all_LoaiGiay'])->nam
 Route::get('/add-LoaiGiay', [LoaiGiayController::class, 'add_LoaiGiay']);
 Route::get('/all-LoaiGiay', [LoaiGiayController::class, 'all_LoaiGiay']);
 Route::post('/save-LoaiGiay', [LoaiGiayController::class, 'save_LoaiGiay']);
-Route::get('/edit-LoaiGiay/{idloaigiay}', [LoaiGiayController::class, 'edit_LoaiGiay','et_loaigiay']);
+Route::get('/edit-LoaiGiay/{idloaigiay}', [LoaiGiayController::class, 'edit_LoaiGiay']);
 Route::get('/delete-LoaiGiay/{idloaigiay}', [LoaiGiayController::class, 'delete_LoaiGiay']);
 Route::post('/update-LoaiGiay', [LoaiGiayController::class, 'update_LoaiGiay']);
