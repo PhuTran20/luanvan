@@ -101,7 +101,7 @@
                             
                               <p>
                                 Quay lại <a href="{{URL::to('') }}" class="txt2"  style="text-decoration: none">
-                                    TRANG Chủ
+                                    trang chủ
                               </a>
                               </p>
                         </div>

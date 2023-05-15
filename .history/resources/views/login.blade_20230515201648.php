@@ -73,7 +73,7 @@
                             </span>
                         </div>
     
-                        <div class="flex-c-m" >
+                        <div class="flex-c-m">
                             <a href="#" class="login100-social-item bg1">
                                 <i class="fa fa-facebook"></i>
                             </a>
@@ -91,17 +91,17 @@
                          
     
                             
-                             <p>Bạn chưa có tài khoản, <a href="{{URL::to('/register') }}" class="txt2"  style="text-decoration: none">
-                                ĐĂNG KÍ NGAY
-                            </a></p>
+                            <a href="{{URL::to('/register') }}" class="txt2">
+                                ĐĂNG KÍ
+                            </a>
                         </div>
-                        <div class="flex-col-c p-t-20">
+                        <div class="flex-col-c p-t-50">
                          
     
                             
                               <p>
-                                Quay lại <a href="{{URL::to('') }}" class="txt2"  style="text-decoration: none">
-                                    TRANG Chủ
+                                Quay lại <a href="{{URL::to('/register') }}" class="txt2">
+                                    trang chủ
                               </a>
                               </p>
                         </div>

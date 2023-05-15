@@ -91,17 +91,17 @@
                          
     
                             
-                             <p>Bạn chưa có tài khoản, <a href="{{URL::to('/register') }}" class="txt2"  style="text-decoration: none">
-                                ĐĂNG KÍ NGAY
-                            </a></p>
+                            <a href="{{URL::to('/register') }}" class="txt2"  style="text-decoration: none">
+                                ĐĂNG KÍ
+                            </a>
                         </div>
                         <div class="flex-col-c p-t-20">
                          
     
                             
                               <p>
-                                Quay lại <a href="{{URL::to('') }}" class="txt2"  style="text-decoration: none">
-                                    TRANG Chủ
+                                Quay lại <a href="{{URL::to('') }}" class="txt2">
+                                    trang chủ
                               </a>
                               </p>
                         </div>
