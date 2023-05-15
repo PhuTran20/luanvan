@@ -48,7 +48,7 @@
     
                         <div class="wrap-input100 validate-input" data-validate="Password is required">
                             <span class="label-input100">Mật khẩu</span>
-                            <input class="input100" type="password" name="pass" placeholder="Nhập mật khẩu">
+                            <input class="input100" type="password" name="password" placeholder="Nhập mật khẩu">
                             <span class="focus-input100" data-symbol="&#xf190;"></span>
                         </div>
                         

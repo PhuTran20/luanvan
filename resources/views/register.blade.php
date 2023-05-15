@@ -39,37 +39,38 @@
             <!-- <img src="images/signup-bg.jpg" alt=""> -->
             <div class="container">
                 <div class="signup-content">
-                    <form method="POST" id="signup-form" class="signup-form">
+                    <form method="post" action="{{URL::to('/register')}}" id="signup-form" class="signup-form">
+                        @csrf
                         <h2 class="form-title">TẠO TÀI KHOẢN</h2>
                          <div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
                             <span class="label-input100">Họ và Tên</span>
-                            <input class="input100" type="text" name="username" placeholder="Nhập họ và tên">
+                            <input class="input100" type="text" name="fullname" placeholder="Nhập họ và tên">
                             <span class="focus-input100" data-symbol="&#xf206;"></span>
                         </div>
     
                         <div class="wrap-input100 validate-input" >
                             <span class="label-input100">Email</span>
-                            <input class="input100" type="email" name="pass" placeholder="Nhập email">
+                            <input class="input100" type="email" name="email" placeholder="Nhập email">
                             <span class="focus-input100" data-symbol="&#9993;"></span>
                         </div>
                         <div class="wrap-input100 validate-input" >
                             <span class="label-input100">Số điện thoại</span>
-                            <input class="input100" type="number" name="pass" placeholder="Nhập số điện thoại">
+                            <input class="input100" type="number" name="phone" placeholder="Nhập số điện thoại">
                             <span class="focus-input100" data-symbol="&#9742;"></span>
                         </div>
                         <div class="wrap-input100 validate-input" >
                             <span class="label-input100">Địa chỉ</span>
-                            <input class="input100" type="text" name="pass" placeholder="Nhập địa chỉ">
+                            <input class="input100" type="text" name="address" placeholder="Nhập địa chỉ">
                             <span class="focus-input100" data-symbol="&#9750;"></span>
                         </div>
                         <div class="wrap-input100 validate-input" >
                             <span class="label-input100">Tên tài khoản</span>
-                            <input class="input100" type="text" name="pass" placeholder="Nhập tên tài  khoản">
+                            <input class="input100" type="text" name="username" placeholder="Nhập tên tài  khoản">
                             <span class="focus-input100" data-symbol="&#xf206;"></span>
                         </div>
                         <div class="wrap-input100 validate-input" data-validate="Password is required">
                             <span class="label-input100">Mật khẩu</span>
-                            <input class="input100" type="password" name="pass" placeholder="Nhập mật khẩu">
+                            <input class="input100" type="password" name="password" placeholder="Nhập mật khẩu">
                             <span class="focus-input100" data-symbol="&#xf190;"></span>
                         </div>
                         <div class="form-group">
@@ -79,7 +80,7 @@
                         <div class="container-login100-form-btn">
                             <div class="wrap-login100-form-btn">
                                 <div class="login100-form-bgbtn"></div>
-                                <button class="login100-form-btn">
+                                <button class="login100-form-btn" name="insert_User">
                                     ĐĂNG KÍ
                                 </button>
                             </div>
