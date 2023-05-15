@@ -26,13 +26,5 @@ class UserController extends Controller
         DB::table('user')->insert($data);
         return view('login');
     }
-    public function dangnhap(Request $request){
-        $username = $request->username;
-        $password = $request ->password;
-        $result= DB::table('user')->where('username',$email)->where('password',$password)->get();
-        if(count($result)>0){
-            Session::put('data_admin',$result[0]);
-            return view('/');
-        }
-    }
+    
 }
