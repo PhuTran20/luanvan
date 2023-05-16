@@ -45,8 +45,6 @@
                             <li><i class="menu-icon fa fa-user"></i><a href="{{ route('quanli_user') }}">Quản lí User</a></li>
                             <li><i class="menu-icon fa fa-paperclip"></i><a href="{{ route('quanli_sanpham') }}">Quản lí Sản phẩm</a></li>
                             <li><i class="menu-icon fa fa-list-ol"></i><a href="{{ route('quanli_donhang') }}">Quản lí Đơn Hàng</a></li>
-                            <li><i class="menu-icon fa fa-list-ol"></i><a href="{{ route('quanli_thuonghieu') }}">Quản lí Thương Hiệu</a></li>
-                            <li><i class="menu-icon fa fa-list-ol"></i><a href="{{ route('quanli_loaigiay') }}">Quản lí Loại Giày</a></li>
                         </ul>
                     </li>
                    

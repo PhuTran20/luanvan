@@ -46,7 +46,6 @@
                             <li><i class="menu-icon fa fa-paperclip"></i><a href="{{ route('quanli_sanpham') }}">Quản lí Sản phẩm</a></li>
                             <li><i class="menu-icon fa fa-list-ol"></i><a href="{{ route('quanli_donhang') }}">Quản lí Đơn Hàng</a></li>
                             <li><i class="menu-icon fa fa-list-ol"></i><a href="{{ route('quanli_thuonghieu') }}">Quản lí Thương Hiệu</a></li>
-                            <li><i class="menu-icon fa fa-list-ol"></i><a href="{{ route('quanli_loaigiay') }}">Quản lí Loại Giày</a></li>
                         </ul>
                     </li>
                    
@@ -68,7 +67,7 @@
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./"><img src="{{url('backend')}}/img/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand" href="{{ route('trangchu-admin') }}"><img src="{{url('backend')}}/img/logo.png" alt="Logo"></a>
                     <a class="navbar-brand hidden" href="./"><img src="{{url('backend')}}/img/logo2.png" alt="Logo"></a>
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                 </div>

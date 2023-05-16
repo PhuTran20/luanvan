@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;    
 use App\Http\Controllers\ThuongHieuController;    
-use App\Http\Controllers\LoaiGiayController;    
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -79,11 +78,3 @@ Route::post('/save-ThuongHieu', [ThuongHieuController::class, 'save_ThuongHieu']
 Route::get('/edit-ThuongHieu/{idthuonghieu}', [ThuongHieuController::class, 'edit_ThuongHieu']);
 Route::get('/delete-ThuongHieu/{idthuonghieu}', [ThuongHieuController::class, 'delete_ThuongHieu']);
 Route::post('/update-ThuongHieu', [ThuongHieuController::class, 'update_ThuongHieu']);
-//LoaiGiay
-Route::get('/quanli_loaigiay', [LoaiGiayController::class, 'all_LoaiGiay'])->name('quanli_loaigiay');
-Route::get('/add-LoaiGiay', [LoaiGiayController::class, 'add_LoaiGiay']);
-Route::get('/all-LoaiGiay', [LoaiGiayController::class, 'all_LoaiGiay']);
-Route::post('/save-LoaiGiay', [LoaiGiayController::class, 'save_LoaiGiay']);
-Route::get('/edit-LoaiGiay/{idloaigiay}', [LoaiGiayController::class, 'edit_LoaiGiay','et_loaigiay']);
-Route::get('/delete-LoaiGiay/{idloaigiay}', [LoaiGiayController::class, 'delete_LoaiGiay']);
-Route::post('/update-LoaiGiay', [LoaiGiayController::class, 'update_LoaiGiay']);
