@@ -43,9 +43,19 @@
                         <a href="{{URL::to('/contact') }}" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="navbar-nav ml-auto py-0">
+                        <?php
+                        $data=Session::get('data');
+                        ?>
+                        @if($data=="")
                         <a href="{{URL::to('/login') }}" class="nav-item nav-link">Đăng nhập</a>
                         <a href="{{URL::to('/register') }}" class="nav-item nav-link">Đăng kí</a>
+                
                     </div>
+                    @else<div class="navbar-nav ml-auto py-0">
+                        <a class="nav-item nav-link">Xin chào {{$data->fullname??""}}</a>
+                        <a href="{{URL::to('/logout') }}" class="nav-item nav-link">Đăng Xuất</a>
+                    </div>
+                    @endif
                 </div>
             </nav>
             <div id="header-carousel" class="carousel slide" data-ride="carousel">
