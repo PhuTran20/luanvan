@@ -19,6 +19,10 @@ Route::post('/register', [UserController::class, 'register']);
 
 Route::get('/insert-User', [UserController::class, 'insert_User']);
 
+Route::post('/trangchu', [UserController::class, 'dangnhap']);
+
+Route::get('/logout', [UserController::class, 'logout']);
+
 Route::get('/', function () {
     return view('index');
 });
@@ -54,9 +58,7 @@ Route::get('/quanli-sanpham', function () {
     return view('quanli_sanpham');
 })->name('quanli_sanpham');
 
-Route::get('/quanli-user', function () {
-    return view('quanli_user');
-})->name('quanli_user');
+
 
 Route::get('/quanli-blog', function () {
     return view('quanli_blog');
@@ -87,3 +89,7 @@ Route::post('/save-LoaiGiay', [LoaiGiayController::class, 'save_LoaiGiay']);
 Route::get('/edit-LoaiGiay/{idloaigiay}', [LoaiGiayController::class, 'edit_LoaiGiay','et_loaigiay']);
 Route::get('/delete-LoaiGiay/{idloaigiay}', [LoaiGiayController::class, 'delete_LoaiGiay']);
 Route::post('/update-LoaiGiay', [LoaiGiayController::class, 'update_LoaiGiay']);
+
+//QuanLiUser
+Route::get('/quanli-user', [UserController::class, 'all_User'])->name('quanli_user');
+Route::get('/all-User', [UserController::class, 'all_User']);

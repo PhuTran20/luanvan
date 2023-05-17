@@ -19,6 +19,7 @@
                                         <tr>
                                             <th>STT</th>
                                             <th>Họ và tên</th>
+                                            <th>Email</th>
                                             <th>SĐT</th>
                                             <th>Địa chỉ</th>
                                             <th>Username</th>
@@ -27,20 +28,24 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php $n=0 ?>
+                                        @foreach($all_User as $key => $user)
                                         <tr>
-                                            <td>1</td>
-                                            <td>Phan Ngọc Sơn</td>
-                                            <td>0334653923</td>
-                                            <td>47 Nguyễn Thị Mười, P4, Q8, TPHCM</td>
-                                            <td>son1111</td>
-                                            <td>asdfdsfsdfsdfsd</td>
+                                            <?php $n++ ?>
+                                            <td>{{$n}}</td>
+                                            <td>{{$user->fullname}}</td>
+                                            <td>{{$user->email}}</td>
+                                            <td>{{$user->phone}}</td>
+                                            <td>{{$user->address}}</td>
+                                            <td>{{$user->username}}</td>
+                                            <td>{{$user->password}}</td>
                                             <td><button type="button" class="btn btn-outline-secondary">
                                                 <i class="fa fa-edit"></i>Sửa</button>
                                                 <button type="button" class="btn btn-outline-danger">
                                                     <i class="ti-trash"></i>  Xóa</button>
                                             </td>
                                         </tr>
-                                      
+                                      @endforeach
                                     </tbody>
                                 </table>
                             </div>

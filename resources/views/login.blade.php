@@ -35,7 +35,8 @@
         <div class="limiter">
             <div class="container-login100" style="background-image: url('frontend/img/bg-01.jpg');">
                 <div class="wrap-login100 p-l-55 p-r-55 p-t-50 p-b-54">
-                    <form class="login100-form validate-form">
+                    <form class="login100-form validate-form" action="{{URL::to('/trangchu')}}" id="formlogin" method="post">
+                        @csrf
                         <span class="login100-form-title p-b-35">
                             ĐĂNG NHẬP
                         </span>
@@ -57,11 +58,19 @@
                                 Quên mật khẩu?
                             </a>
                         </div>
-                        
+                        <div class="text-right p-t-8 p-b-31" style="color:red; text-align: center;">
+                        <?php
+                        $message = Session::get('message');
+                        if($message){
+                            echo $message;
+                            Session::put('message',null);
+                        }
+                        ?>
+                         </div>
                         <div class="container-login100-form-btn">
                             <div class="wrap-login100-form-btn">
                                 <div class="login100-form-bgbtn"></div>
-                                <button class="login100-form-btn">
+                                <button class="login100-form-btn" type="submit">
                                     ĐĂNG NHẬP
                                 </button>
                             </div>
