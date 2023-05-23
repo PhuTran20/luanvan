@@ -35,7 +35,7 @@ class UserController extends Controller
         
         if(count($result)>0){
            Session::put('data',$result[0]);
-            return view("index");
+            return redirect("/");
         }else{
            Session::put('message','Tài khoản hoặc mật khẩu sai');
            return view('login');

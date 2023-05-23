@@ -61,7 +61,7 @@ Route::get('/quanli-sanpham', function () {
 
 //category
 Route::get('/', [ThuongHieuController::class, 'index'])->name('index');
-Route::get('/shop', [ThuongHieuController::class, 'shop']) 
+Route::get('/shop', [ThuongHieuController::class, 'shop']);
 Route::get('/detail', [ThuongHieuController::class, 'index'])->name('index');
 Route::get('/cart', [ThuongHieuController::class, 'index'])->name('index');
 Route::get('/checkout', [ThuongHieuController::class, 'index'])->name('index');

@@ -35,7 +35,7 @@
         <div class="limiter">
             <div class="container-login100" style="background-image: url('frontend/img/bg-01.jpg');">
                 <div class="wrap-login100 p-l-55 p-r-55 p-t-50 p-b-54">
-                    <form class="login100-form validate-form" action="{{URL::to('/trangchu')}}" id="formlogin" method="post">
+                    <form class="login100-form validate-form" action="{{URL::to('/')}}" id="formlogin" method="post">
                         @csrf
                         <span class="login100-form-title p-b-35">
                             ĐĂNG NHẬP

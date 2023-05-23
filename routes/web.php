@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ThuongHieuController;    
 use App\Http\Controllers\LoaiGiayController;    
 use App\Http\Controllers\ProductController;    
+use App\Http\Controllers\AdminController;   
   
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ Route::post('/register', [UserController::class, 'register']);
 
 Route::get('/insert-User', [UserController::class, 'insert_User']);
 
-Route::post('/trangchu', [UserController::class, 'dangnhap']);
+Route::post('/', [UserController::class, 'dangnhap']);
 
 Route::get('/logout', [UserController::class, 'logout']);
 
@@ -59,6 +60,15 @@ Route::get('/trangchu-admin', function () {
 Route::get('/quanli-sanpham', function () {
     return view('quanli_sanpham');
 })->name('quanli_sanpham');
+
+
+
+Route::get('/admin',[AdminController::class,'dangnhap']);
+
+Route::post('/admin',[AdminController::class,'kiemtraDN']);
+
+Route::get('/logout', [AdminController::class, 'logout']);
+
 
 //thuonghieu
 Route::get('/', [ThuongHieuController::class, 'index'])->name('index');
