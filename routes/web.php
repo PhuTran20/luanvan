@@ -24,7 +24,7 @@ Route::get('/insert-User', [UserController::class, 'insert_User']);
 
 Route::post('/', [UserController::class, 'dangnhap']);
 
-Route::get('/logout', [UserController::class, 'logout']);
+Route::get('/logoutuser', [UserController::class, 'logout']);
 
 Route::get('/', function () {
     return view('index');

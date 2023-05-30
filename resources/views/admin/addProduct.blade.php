@@ -21,7 +21,7 @@
 
                         <option value=" ">Chọn thể loại</option>
                         @foreach ( $Loaigiay as $data)
-                        <option value="{{ $data->idloaigiay }}">{{ $data->idloaigiay }}</option>
+                        <option value="{{ $data->idloaigiay }}">{{ $data->name_category }}</option>
                         @endforeach
 
                     </select>

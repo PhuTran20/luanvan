@@ -64,7 +64,7 @@
                     </div>
                     @else<div class="navbar-nav ml-auto py-0">
                         <a class="nav-item nav-link">Xin chào {{$data->fullname??""}}</a>
-                        <a href="{{URL::to('/logout') }}" class="nav-item nav-link">Đăng Xuất</a>
+                        <a href="{{URL::to('/logoutuser') }}" class="nav-item nav-link">Đăng Xuất</a>
                     </div>
                     @endif
                 </div>
